@@ -1,10 +1,8 @@
-import { NavBar } from "./NavBar";
-
 export const Home = () => {
   return (
     <section id="Home" className="h-full w-full">
-      <NavBar />
-      <div className="flex min-h-[90vh] w-full flex-col items-center justify-center px-3 lg:px-0">
+      {/* <NavBar /> */}
+      <div className="flex min-h-screen w-full flex-col items-center justify-center px-3 lg:px-0">
         <div className="w-fit px-4">
           <div className="pb-1 font-mono text-lg font-medium text-gray-700 sm:text-xl md:text-2xl lg:pb-0">
             Hello 👋🏻 , I'm
@@ -13,7 +11,7 @@ export const Home = () => {
             <span className="pr-2 font-extrabold">Sakkurthi</span>
             Sashank
           </div>
-          <div className="font-raleway text-3xl font-bold text-gray-500 sm:text-5xl md:text-6xl lg:text-7xl">
+          <div className="font-raleway text-3xl font-bold text-gray-500 sm:text-5xl md:text-6xl">
             Full Stack Developer
           </div>
           <div className="max-w-xl pt-3 font-raleway text-sm font-medium leading-relaxed text-gray-500">
@@ -87,7 +85,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <button className="mt-8 w-60 border border-gray-400 px-6 py-2 font-raleway font-medium text-gray-700 antialiased shadow transition duration-200 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0)] sm:w-fit">
+          <button className="mt-8 w-60 border border-gray-400 px-6 py-2 font-raleway font-medium text-gray-700 antialiased shadow transition duration-200 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0)]">
             <a href="mailto:sakkurthisashank@gmail.com"> Get In Touch</a>
           </button>
         </div>
