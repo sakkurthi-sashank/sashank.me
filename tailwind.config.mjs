@@ -4,9 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        raleway: ["Raleway"],
-        ibm_plex_mono: ["IBM Plex Mono"],
-        inter: ["Inter"],
+        roboto_mono: ["Roboto Mono", "monospace"],
       },
     },
   },

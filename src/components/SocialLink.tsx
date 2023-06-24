@@ -36,12 +36,11 @@ const SocialMediaLinks = [
 export const SocialLink = () => {
   return (
     <div className="py-4 antialiased">
-      <div className="pb-3 text-lg text-gray-300">Find me on </div>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-7">
         {SocialMediaLinks.map((link) => (
           <a
             href={link.link}
-            className="flex items-center space-x-1.5 text-gray-300"
+            className="flex items-center space-x-1.5 text-gray-400 transition-colors duration-200 hover:text-gray-800"
             target="_blank"
             key={link.id}
           >
@@ -55,7 +54,7 @@ export const SocialLink = () => {
             >
               {link.svg}
             </svg>
-            <span className="font-inter">{link.name}</span>
+            <span className="font-roboto_mono">{link.name}</span>
           </a>
         ))}
       </div>
