@@ -1,32 +1,50 @@
-import { SocialLink } from "./components/SocialLink";
-
 export const App = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center px-4 pt-10 sm:pt-28">
-      <div className="w-fit">
-        <div className="py-5 font-roboto_mono text-3xl font-bold text-gray-700 antialiased sm:text-4xl md:text-5xl lg:text-6xl">
-          Sakkurthi Sashank
+    <div className="hero-pattern relative flex h-screen flex-col items-center justify-center">
+      <div className="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+
+      <div className="absolute left-0 right-0 top-0 flex h-16 items-center">
+        <div className="w-full"></div>
+        <div className="flex w-full items-center justify-around font-mono text-sm font-medium text-gray-800 antialiased">
+          <div className="rounded-full bg-gray-800 px-6 py-2 text-white">
+            Home
+          </div>
+          <div>About Me</div>
+          <div>Tech Stack</div>
+          <div>Projects</div>
+          <div>Resume</div>
+          <div>Contact</div>
         </div>
-        <div className="max-w-2xl pt-3 font-roboto_mono font-normal text-base text-gray-600 antialiased">
-          <p>
-            Hey, I am Sakkurthi Sashank, studying Computer Science and
-            Engineering at SRM University, Andhra Pradesh.
-          </p>
-          <br />
-          <p>
-            As a Full Stack Developer, I enjoy the thrill of building things
-            that come to life on the internet. From crafting interactive
-            websites to developing robust web applications.
-          </p>
-          <br />
-          <p>
-            So, here's to all the developers out there! Keep coding, keep
-            laughing, and remember that humor is an essential tool in the world
-            of programming. Happy coding!
-          </p>
-          <br />
+      </div>
+
+      <div className="z-10 flex flex-col">
+        <div className="font-inter text-9xl font-bold text-gray-800">
+          Sashank Sakkurthi
         </div>
-        <SocialLink />
+
+        <div className="ml-3 font-mono text-4xl font-medium text-gray-800">
+          Full Stack Developer & Devops Engineer
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 mb-16">
+        <button className="flex items-center space-x-1 rounded-full border bg-white px-4 py-2 font-mono text-sm text-gray-800 antialiased shadow">
+          <span>About Me</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 7l5 5l5 -5"></path>
+            <path d="M7 13l5 5l5 -5"></path>
+          </svg>
+        </button>
       </div>
     </div>
   );
