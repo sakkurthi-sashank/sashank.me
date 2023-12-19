@@ -39,10 +39,10 @@ export function App() {
             alt="Sashank Sakkurthi"
           />
         </div>
-        <h3 className="pt-3 text-center font-euclid text-4xl font-semibold antialiased">
+        <h3 className="pt-5 text-center font-josefin-sans text-4xl font-bold antialiased">
           Sashank Sakkurthi
         </h3>
-        <h5 className="ml-3 text-center font-euclid text-base font-light text-[#475467]">
+        <h5 className="pl-3 text-center font-josefin-sans text-base font-normal text-gray-500 antialiased">
           Full Stack Developer & Devops Engineer
         </h5>
 
@@ -59,7 +59,7 @@ export function App() {
           ))}
         </div>
 
-        <div className="z-10 mt-14 max-w-3xl px-4 text-center font-inter text-sm font-normal text-gray-600 antialiased sm:text-base">
+        <div className="z-10 mt-14 max-w-3xl px-4 text-center font-josefin-sans text-sm font-normal text-gray-600 antialiased sm:text-base">
           <p>
             Hello! I'm Sakkurthi Sashank, a Computer Science Undergrad student
             at SRM University AP. I'm captivated by coding and problem solving.
