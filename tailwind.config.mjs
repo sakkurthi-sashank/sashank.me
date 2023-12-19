@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        euclid: ["Euclid Circular A", "sans-serif"],
       },
     },
   },
