@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        "josefin-sans": ["Josefin Sans", "sans-serif"],
+        "plus-jakarta-sans": ["Plus Jakarta Sans", "sans-serif"],
       },
     },
   },
