@@ -1,6 +1,6 @@
 import { FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
-import { Navbar } from "./Navbar";
+import Image from "next/image";
 
 const SocialMediaLinks = [
   {
@@ -37,27 +37,29 @@ const SocialMediaLinks = [
 
 export function HomeSection() {
   return (
-    <div className="relative flex h-screen min-h-screen w-full flex-col items-center justify-center bg-white px-4">
-      <div className="z-10 w-full">
-        <Navbar />
-      </div>
+    <section
+      className="relative flex min-h-screen w-full flex-col items-center justify-center bg-white px-4"
+      id="home"
+    >
       <div className="absolute inset-0 z-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="z-10 flex h-full w-full flex-col items-center justify-center space-y-8">
+      <div className="z-10 flex h-full w-full flex-col items-center justify-center space-y-5 pt-10">
         <div className="flex w-full items-center justify-center">
-          <img
+          <Image
             src="/img/sakkurthi-sashank.jpg"
-            className="h-52 w-52 rounded-full border-4 border-gray-800 object-cover shadow-sm"
+            width={208}
+            height={208}
+            className="rounded-full border-4 border-gray-800 object-cover shadow-sm"
             alt="Sashank Sakkurthi"
           />
         </div>
 
         <div className="space-y-2">
           <h3 className="scroll-m-20 text-center font-plus-jakarta-sans text-4xl font-bold sm:text-5xl">
-            Hello, I'm Sashank Sakkurthi
+            Hello, I&apos;m Sashank Sakkurthi
           </h3>
-          <h5 className="scroll-m-20 text-center font-plus-jakarta-sans text-base font-normal text-gray-600">
+          <h4 className="scroll-m-20 text-center font-plus-jakarta-sans text-base font-normal text-gray-600">
             Undergraduate Student @ SRM University AP & Full Stack Developer
-          </h5>
+          </h4>
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-10 gap-y-3 pt-2">
@@ -78,14 +80,23 @@ export function HomeSection() {
         </div>
 
         <div className="flex gap-x-4 pt-6">
-          <button className="rounded-full border border-gray-900 bg-gray-900 px-6 py-2 font-plus-jakarta-sans text-white transition duration-300 ease-in-out hover:bg-white hover:text-gray-900">
+          <a
+            aria-label="resume"
+            target="_blank"
+            href="https://drive.google.com/file/d/1mYlW0YB1h3A2od4i2O803uCtDBoL5vvJ/view?usp=drive_link"
+            className="rounded-full border border-gray-900 bg-gray-900 px-6 py-2 font-plus-jakarta-sans text-white transition duration-300 ease-in-out hover:bg-white hover:text-gray-900"
+          >
             Resume
-          </button>
-          <button className="rounded-full border border-gray-900 bg-white px-6 py-2 font-plus-jakarta-sans text-gray-800 transition duration-300 ease-in-out hover:bg-gray-900 hover:text-white">
+          </a>
+          <a
+            aria-label="about me"
+            href="#about"
+            className="rounded-full border border-gray-900 bg-white px-6 py-2 font-plus-jakarta-sans text-gray-800 transition duration-300 ease-in-out hover:bg-gray-900 hover:text-white"
+          >
             About Me
-          </button>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

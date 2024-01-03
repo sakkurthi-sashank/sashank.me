@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 
@@ -36,7 +37,7 @@ const SocialMediaLinks = [
 
 export function ContactSection() {
   return (
-    <div className="mt-6 flex min-h-screen w-full flex-col">
+    <section className="flex min-h-screen w-full flex-col pt-10" id="contact">
       <div className="h-full w-full px-4 py-10">
         <h2 className="scroll-m-20 text-center font-plus-jakarta-sans text-4xl font-bold sm:text-5xl">
           Get in touch
@@ -45,10 +46,12 @@ export function ContactSection() {
 
       <div className="flex flex-col-reverse items-center justify-center gap-x-10 gap-y-10 pt-2 sm:flex-row">
         <div className="m-auto hidden h-full w-full items-center justify-center xl:flex">
-          <img
+          <Image
             src="/img/sakkurthi-sashank-2.jpg"
             alt="About Me"
-            className="h-96 w-96 object-cover shadow-sm"
+            width={384}
+            height={384}
+            className="rounded-sm object-cover shadow-[20px_20px_0px_0px_rgba(0,0,0)] transition duration-300 ease-in-out hover:shadow-none"
           />
         </div>
 
@@ -71,6 +74,6 @@ export function ContactSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

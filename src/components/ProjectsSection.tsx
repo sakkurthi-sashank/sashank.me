@@ -1,4 +1,5 @@
 import { LuExternalLink } from "react-icons/lu";
+import Image from "next/image";
 
 function ProjectCard({
   title,
@@ -12,15 +13,17 @@ function ProjectCard({
   githubLink: string;
 }) {
   return (
-    <div className="flex max-w-md flex-col space-y-4 rounded-lg border border-gray-300 p-4 shadow-md">
+    <div className="flex max-w-sm flex-col space-y-4 rounded-lg border border-gray-300 p-4 shadow-md transition duration-300 ease-in-out hover:border hover:border-gray-800">
       <h2 className="scroll-m-20 border-b pb-2 font-plus-jakarta-sans text-2xl font-semibold tracking-tight first:mt-0">
         {title}
       </h2>
 
-      <img
+      <Image
         src={imageSrc}
         alt={title}
         loading="lazy"
+        width={370}
+        height={192}
         className="mt-4 h-48 w-full rounded-md object-cover"
       />
 
@@ -45,7 +48,7 @@ function ProjectCard({
 
 export function ProjectsSection() {
   return (
-    <div className="mt-6 flex min-h-screen w-full flex-col">
+    <section className="flex min-h-screen w-full flex-col pt-16" id="projects">
       <div className="h-full w-full px-4">
         <h2 className="scroll-m-20 font-plus-jakarta-sans text-4xl font-bold sm:text-5xl">
           Projects
@@ -96,6 +99,6 @@ export function ProjectsSection() {
           githubLink="https://github.com/sakkurthi-sashank/school-website"
         />
       </div>
-    </div>
+    </section>
   );
 }
