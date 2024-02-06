@@ -16,12 +16,6 @@ const SocialMediaLinks = [
     link: "https://github.com/sakkurthi-sashank",
   },
   {
-    id: 3,
-    name: "Instagram",
-    icon: <FaInstagram className="h-6 w-6 text-[#C13584]" />,
-    link: "https://www.instagram.com/sashank_sakkurthi/",
-  },
-  {
     id: 4,
     name: "Linkedin",
     icon: <FaLinkedin className="h-6 w-6 text-[#0077B5]" />,
