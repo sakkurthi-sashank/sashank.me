@@ -12,7 +12,7 @@ export function BlogsSection() {
 
       <div className="mt-32 flex h-full flex-col items-center justify-center space-y-3">
         <div className="max-w-xl scroll-m-20 text-center font-plus-jakarta-sans text-2xl font-normal text-gray-600">
-          <p>Comming Soon...</p>
+          <p>Coming Soon...</p>
         </div>
       </div>
     </section>
