@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-plus-jakarta-sans",
-  subsets: ["latin-ext"],
-});
+import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
   title: "Sakkurthi Sashank",
@@ -41,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={plusJakartaSans.variable}>{children}</body>
+      <body className={GeistSans.variable}>{children}</body>
     </html>
   );
 }

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "plus-jakarta-sans": "var(--font-plus-jakarta-sans)",
+        "geist-sans": "var(--font-geist-sans)",
       },
     },
   },
