@@ -33,62 +33,68 @@ const linkedinLink = "https://www.linkedin.com/in/sakkurthi-sashank/";
 
 export function AboutMeSection() {
   return (
-    <article
-      className="flex min-h-screen w-full items-start justify-center bg-white px-4 py-10 pt-20 sm:px-6 md:pt-0"
-      id="about"
-    >
-      <div className="m-auto flex h-full max-w-3xl flex-col items-center justify-center space-y-5">
-        <div className="flex h-full w-full flex-col justify-center space-y-4">
-          <h2 className="scroll-m-20 font-plus-jakarta-sans text-3xl font-bold">
-            About Me
-          </h2>
+    <div className="mx-auto mt-20 flex h-full w-full max-w-5xl flex-col items-center justify-center space-y-5 px-4 pt-10">
+      <div className="z-10 flex flex-col justify-center space-y-4 text-center">
+        <h2 className="font-scroll-m-20 text-3xl font-bold">About Me</h2>
 
-          <p className="mb-8 font-plus-jakarta-sans text-lg text-gray-600">
-            I am a Computer Science student at SRM University AP and a Software
-            Developer Intern at Predli AB. As a Full Stack Developer & DevOps
-            Engineer, I have extensive experience in building scalable and
-            robust applications. Additionally, I maintain a strong commitment to
-            delivering high-quality solutions and am passionate about staying at
-            the forefront of technological advancements.
-          </p>
+        <p className="mb-8 text-xl leading-relaxed text-gray-700">
+          Hello 👋🏻 there! I&apos;m Sashank Sakkurthi, a Full Stack Developer and
+          an Undergraduate Student at{" "}
+          <a
+            href="https://srmap.edu.in/"
+            className="text-blue-600 underline hover:text-blue-700"
+          >
+            SRM University AP
+          </a>
+          . Currently, I work as a Software Developer Intern at{" "}
+          <a
+            href="https://www.predli.com/"
+            className="text-blue-600 underline hover:text-blue-700"
+          >
+            Predli
+          </a>
+          . I have a profound interest in crafting personal projects and SaaS
+          products, solving problems, actively contributing to open-source, and
+          exploring Generative AI. I&apos;ve participated in various hackathons
+          and secured victories in some of them.
+        </p>
 
-          <p className="font-plus-jakarta-sans text-lg text-gray-600">
-            Open to new opportunities and challenges, available for projects,
-            open-source collaborations, hackathons, mentorship, and internships.
-            Reach me at{" "}
-            <a
-              href={emailLink}
-              className="text-blue-600 underline hover:text-blue-700"
+        <p className="mb-8 text-xl leading-relaxed text-gray-700">
+          I&apos;m open to new opportunities and challenges, available for
+          projects, open-source collaborations, hackathons, mentorship, and
+          internships. Reach me at{" "}
+          <a
+            href={emailLink}
+            className="text-blue-600 underline hover:text-blue-700"
+          >
+            Mail
+          </a>{" "}
+          or{" "}
+          <a
+            href={linkedinLink}
+            className="text-blue-600 underline hover:text-blue-600"
+          >
+            LinkedIn
+          </a>
+        </p>
+      </div>
+
+      <div className="z-10 flex w-full flex-col justify-center space-y-4 pt-6">
+        <h2 className="font-scroll-m-20 text-center text-3xl font-bold">
+          Skills
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-3">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="font-rounded-sm border border-gray-900 bg-white px-4 py-1.5 text-gray-800 transition duration-300 ease-in-out hover:bg-gray-900 hover:text-white"
             >
-              Mail
-            </a>{" "}
-            or{" "}
-            <a
-              href={linkedinLink}
-              className="text-blue-600 underline hover:text-blue-600"
-            >
-              LinkedIn
-            </a>
-          </p>
-        </div>
-
-        <div className="flex w-full flex-col justify-center space-y-4 pt-6">
-          <h2 className="scroll-m-20 font-plus-jakarta-sans text-3xl font-bold">
-            Skills
-          </h2>
-
-          <div className="flex flex-wrap gap-3">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="rounded-sm border border-gray-900 bg-white px-4 py-1.5 font-plus-jakarta-sans text-gray-800 transition duration-300 ease-in-out hover:bg-gray-900 hover:text-white"
-              >
-                {skill}
-              </div>
-            ))}
-          </div>
+              {skill}
+            </div>
+          ))}
         </div>
       </div>
-    </article>
+    </div>
   );
 }
