@@ -37,6 +37,7 @@ export const SocialLinks = () => {
         <a
           href={link.link}
           target="_blank"
+          aria-label={link.name}
           rel="noopener noreferrer"
           key={link.id}
           className="flex items-center justify-center space-x-2 rounded-full border border-gray-200 bg-white p-3 shadow-sm transition-shadow duration-300 ease-in-out hover:border-gray-900"
