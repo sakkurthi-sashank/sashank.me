@@ -31,21 +31,24 @@ const skills = [
 
 export default function SkillsSession() {
   return (
-    <div className="mx-auto mt-8 flex w-full max-w-4xl flex-col items-center space-y-5 px-4">
-      <div className="z-10 flex flex-col items-center justify-center space-y-6 text-center">
+    <section
+      className="mx-auto mt-12 flex min-h-screen w-full max-w-5xl flex-col px-6"
+      id="skills"
+    >
+      <div className="z-10 my-auto">
         <PageTitle title="Skills" />
 
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="mt-8 flex flex-wrap justify-start gap-3">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="rounded-full border bg-white px-4 py-1.5 text-sm text-gray-800"
+              className="rounded-full border bg-white px-4 py-1.5 text-gray-800"
             >
               {skill}
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -32,7 +32,7 @@ import React from "react";
 
 export const SocialLinks = () => {
   return (
-    <div className="z-10 flex flex-wrap justify-center gap-6 pt-2">
+    <div className="z-10 flex flex-wrap gap-6 pt-2">
       {SocialMediaLinks.map((link) => (
         <a
           href={link.link}

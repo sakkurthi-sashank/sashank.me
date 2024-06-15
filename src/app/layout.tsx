@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { GeistSans } from "geist/font/sans";
+import { Space_Grotesk } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Sakkurthi Sashank",
@@ -28,6 +28,13 @@ export const metadata: Metadata = {
   ],
 };
 
+const spaceGrotesk = Space_Grotesk({
+  style: "normal",
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -35,7 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GeistSans.variable}>{children}</body>
+      <body className={spaceGrotesk.variable}>{children}</body>
     </html>
   );
 }

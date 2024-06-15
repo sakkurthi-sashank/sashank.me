@@ -9,5 +9,5 @@ html {
 }
 
 body {
-  @apply font-geist-sans antialiased;
+  @apply font-space-grotesk antialiased;
 }

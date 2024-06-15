@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "geist-sans": "var(--font-geist-sans)",
+        "space-grotesk": "var(--font-space-grotesk)",
       },
     },
   },

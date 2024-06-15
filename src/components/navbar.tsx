@@ -11,6 +11,10 @@ export const FloatingNavbar = () => {
       href: "#about",
     },
     {
+      title: "Skills",
+      href: "#skills",
+    },
+    {
       title: "Experience",
       href: "#experience",
     },

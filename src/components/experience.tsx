@@ -8,27 +8,40 @@ const ExperienceItem = ({
   designation,
   date,
   location,
+  companyLink,
 }: {
   logo: string;
   company: string;
   designation: string;
   date: string;
   location: string;
+  companyLink: string;
 }) => {
   return (
     <div className="mb-6 flex rounded-xl border bg-white px-6 py-4 shadow-md">
       <Image
         src={logo}
-        alt={company}
-        className="mr-4 object-contain"
-        width={40}
-        height={40}
+        alt={`${company} logo`}
+        className="mr-6 mt-2 h-12 w-12 object-contain"
+        width={48}
+        height={48}
       />
-      <div className="w-full text-start">
-        <h3 className="text-lg font-semibold">{company}</h3>
-        <p className="text-gray-600">{designation}</p>
-        <p className="text-gray-500">
+      <div className="flex flex-col justify-center">
+        <h3 className="text-xl font-semibold text-gray-800">{company}</h3>
+        <p className="text-md text-gray-600">{designation}</p>
+        <p className="text-sm text-gray-500">
           {date} &#183; {location}
+        </p>
+
+        <p>
+          <a
+            href={companyLink}
+            className="text-blue-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View website
+          </a>
         </p>
       </div>
     </div>
@@ -37,19 +50,20 @@ const ExperienceItem = ({
 
 export const ExperienceSection = () => {
   return (
-    <div
-      className="mx-auto flex h-screen w-full max-w-4xl flex-col items-center justify-center space-y-5 px-4"
+    <section
+      className="mx-auto mt-12 flex min-h-screen w-full max-w-5xl flex-col px-6"
       id="experience"
     >
-      <div className="z-10 flex flex-col items-center justify-center space-y-6 text-center">
+      <div className="z-10 my-auto">
         <PageTitle title="Experience" />
-        <div className="mx-auto max-w-4xl pt-6">
+        <div className="mt-8">
           <ExperienceItem
             logo="/img/predli-logo.svg"
             company="Predli AB"
             designation="Full Stack Developer"
             date="February 2024 - Present"
             location="Stockholm, Stockholm County, Sweden"
+            companyLink="https://predli.com"
           />
           <ExperienceItem
             logo="/img/next-tech-lab-logo.png"
@@ -57,10 +71,11 @@ export const ExperienceSection = () => {
             designation="Member"
             date="May 2022 - Present"
             location="Amaravathi, Andhra Pradesh, India"
+            companyLink="https://nexttechlab.in"
           />
-          {/* Add more experience items as needed */}
         </div>
+        {/* Add more experience items as needed */}
       </div>
-    </div>
+    </section>
   );
 };
