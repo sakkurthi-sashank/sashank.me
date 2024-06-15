@@ -51,7 +51,7 @@ const ExperienceItem = ({
 export const ExperienceSection = () => {
   return (
     <section
-      className="mx-auto mt-12 flex min-h-screen w-full max-w-5xl flex-col px-6"
+      className="mx-auto flex w-full max-w-5xl flex-col px-6"
       id="experience"
     >
       <div className="z-10 my-auto">

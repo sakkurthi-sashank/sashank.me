@@ -3,7 +3,7 @@ import { SocialLinks } from "./social-links";
 export function ContactSection() {
   return (
     <div
-      className="mx-auto mt-8 flex h-screen w-full max-w-4xl flex-col items-center justify-center space-y-5 px-4"
+      className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center space-y-5 px-4 py-20"
       id="contact"
     >
       <div className="z-10 flex flex-col items-center justify-center space-y-6 text-center">

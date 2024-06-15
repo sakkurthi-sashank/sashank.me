@@ -32,13 +32,13 @@ const skills = [
 export default function SkillsSession() {
   return (
     <section
-      className="mx-auto mt-12 flex min-h-screen w-full max-w-5xl flex-col px-6"
+      className="mx-auto flex w-full max-w-5xl flex-col px-6"
       id="skills"
     >
       <div className="z-10 my-auto">
         <PageTitle title="Skills" />
 
-        <div className="mt-8 flex flex-wrap justify-start gap-3">
+        <div className="mt-6 flex flex-wrap justify-start gap-3">
           {skills.map((skill, index) => (
             <div
               key={index}
