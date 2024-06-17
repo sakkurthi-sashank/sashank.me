@@ -18,7 +18,7 @@ const ExperienceItem = ({
   companyLink: string;
 }) => {
   return (
-    <div className="mb-6 flex rounded-xl border border-gray-300 bg-white px-6 py-4 shadow-md transition-shadow duration-200 hover:shadow-lg">
+    <div className="mb-6 flex rounded-xl border border-gray-300 bg-white px-6 py-4 shadow-md transition-shadow duration-200">
       <Image
         src={logo}
         alt={`${company} logo`}
@@ -35,7 +35,7 @@ const ExperienceItem = ({
         <p>
           <a
             href={companyLink}
-            className="text-blue-500 hover:underline"
+            className="text-blue-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >

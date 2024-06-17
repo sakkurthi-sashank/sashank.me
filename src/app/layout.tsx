@@ -3,22 +3,27 @@ import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "Sakkurthi Sashank",
+  title: "Sakkurthi Sashank - Full Stack Developer Portfolio",
   description:
-    "Sakkurthi Sashank: A skilled professional in Full Stack Development with a portfolio showcasing innovative projects and a passion for Software Engineering. Explore impactful creations and get in touch for collaborations.",
+    "I'm Sashank Sakkurthi, a Full Stack Developer based in Amaravati, India. As a CSE student at SRM University AP and developer at Predli AB, I specialize in full-stack, blockchain, and generative AI applications. Highlights include winning Unfold23 by CoinDCX and organizing HackSRM. Let's connect to explore innovative projects.",
   keywords: [
-    "React",
     "Sakkurthi Sashank",
-    "Next Js",
-    "SRM University AP",
-    "SRM Ap",
-    "Amaravati",
-    "Personal Portfolio",
-    "Software engineering Developer intern",
     "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Java",
+    "Software Engineering",
+    "SRM University AP",
+    "Portfolio",
     "Frontend Development",
     "Backend Development",
-    "Java",
+    "Blockchain",
+    "Generative AI",
+    "HackSRM",
+    "Predli AB",
+    "Unfold23",
+    "CoinDCX",
+    "Next Tech Lab",
   ],
   robots: "index, follow",
   authors: [
