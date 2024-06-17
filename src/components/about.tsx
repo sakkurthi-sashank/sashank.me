@@ -3,11 +3,14 @@ import { PageTitle } from "./page-title";
 
 export function AboutMeSection() {
   return (
-    <section className="mx-auto flex w-full max-w-5xl flex-col px-6" id="about">
-      <div className="z-10 my-auto flex flex-col space-y-6 text-start text-lg md:text-xl">
+    <section
+      className="mx-auto flex w-full max-w-6xl flex-col px-6 py-12 md:py-16 lg:py-20"
+      id="about"
+    >
+      <div className="z-10 my-auto flex flex-col space-y-8 text-start text-lg md:space-y-10 md:text-xl lg:space-y-12">
         <PageTitle title="About Me" />
 
-        <p className="mb-8 text-justify  leading-relaxed text-gray-700">
+        <p className="mb-8 text-justify leading-relaxed text-gray-700">
           Hello! I&apos;m Sashank Sakkurthi based in Amaravati, India 🇮🇳.
           I&apos;m an undergraduate student studying CSE at SRM University AP 🎓
           and a Full Stack Developer at Predli AB 🧑🏻‍💻. With over 1 year of

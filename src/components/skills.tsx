@@ -6,14 +6,14 @@ const skills = [
   "HTML",
   "CSS",
   "React Js",
-  "Javascript",
+  "JavaScript",
   "Java",
-  "Typescript",
-  "Next Js",
+  "TypeScript",
+  "Next.js",
   "Python",
-  "Express Js",
-  "Node Js",
-  "Fast API",
+  "Express.js",
+  "Node.js",
+  "FastAPI",
   "SQL",
   "MySQL",
   "PostgreSQL",
@@ -32,17 +32,16 @@ const skills = [
 export default function SkillsSession() {
   return (
     <section
-      className="mx-auto flex w-full max-w-5xl flex-col px-6"
+      className="mx-auto flex w-full max-w-6xl flex-col px-6 py-12 md:py-16 lg:py-20"
       id="skills"
     >
       <div className="z-10 my-auto">
         <PageTitle title="Skills" />
-
-        <div className="mt-6 flex flex-wrap justify-start gap-3">
+        <div className="mt-8 flex flex-wrap justify-start gap-4">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="rounded-full border bg-white px-4 py-1.5 text-gray-800"
+              className="rounded-full border border-gray-300 bg-gray-50 px-4 py-2 text-sm font-medium text-gray-800 shadow-sm transition-colors duration-200 hover:bg-gray-100"
             >
               {skill}
             </div>

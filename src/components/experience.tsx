@@ -18,11 +18,11 @@ const ExperienceItem = ({
   companyLink: string;
 }) => {
   return (
-    <div className="mb-6 flex rounded-xl border bg-white px-6 py-4 shadow-md">
+    <div className="mb-6 flex rounded-xl border border-gray-300 bg-white px-6 py-4 shadow-md transition-shadow duration-200 hover:shadow-lg">
       <Image
         src={logo}
         alt={`${company} logo`}
-        className="mr-6 mt-2 h-12 w-12 object-contain"
+        className="mr-6 mt-4 h-12 w-12 object-contain"
         width={48}
         height={48}
       />
@@ -32,7 +32,6 @@ const ExperienceItem = ({
         <p className="text-sm text-gray-500">
           {date} &#183; {location}
         </p>
-
         <p>
           <a
             href={companyLink}
@@ -51,7 +50,7 @@ const ExperienceItem = ({
 export const ExperienceSection = () => {
   return (
     <section
-      className="mx-auto flex w-full max-w-5xl flex-col px-6"
+      className="mx-auto flex w-full max-w-6xl flex-col px-6 py-12 md:py-16 lg:py-20"
       id="experience"
     >
       <div className="z-10 my-auto">
@@ -74,7 +73,6 @@ export const ExperienceSection = () => {
             companyLink="https://nexttechlab.in"
           />
         </div>
-        {/* Add more experience items as needed */}
       </div>
     </section>
   );

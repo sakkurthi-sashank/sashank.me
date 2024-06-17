@@ -1,5 +1,7 @@
 import React from "react";
 
 export function PageTitle({ title }: { title: string }) {
-  return <h2 className="font-scroll-m-20 text-3xl font-bold">{title}</h2>;
+  return (
+    <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">{title}</h2>
+  );
 }

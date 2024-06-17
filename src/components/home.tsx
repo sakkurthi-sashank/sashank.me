@@ -3,7 +3,7 @@ import { SocialLinks } from "./social-links";
 
 export function HomeSection() {
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col-reverse items-center justify-center px-6 pt-28 md:flex-row-reverse md:pb-0 md:pt-32">
+    <div className="mx-auto flex max-w-6xl flex-col-reverse items-center justify-center px-6 pt-28 md:flex-row-reverse md:pb-0 md:pt-32">
       <div className="mt-14 flex w-full items-center justify-center md:mt-0 md:justify-end">
         <Image
           src="/img/sakkurthi-sashank.jpg"
@@ -14,24 +14,16 @@ export function HomeSection() {
         />
       </div>
       <div className="z-10 flex w-full justify-center">
-        <div className="flex w-full flex-col justify-center space-y-3">
+        <div className="flex w-full flex-col justify-center space-y-4 md:space-y-5">
           <h2 className="text-4xl font-bold leading-snug tracking-tight md:text-5xl">
             Hello,
           </h2>
           <h2 className="text-4xl font-bold leading-snug tracking-tight md:text-5xl">
             Sashank here! 👋🏻
           </h2>
-
-          <h4 className="text-lg text-gray-700">
-            A Full Stack Developer & Devops Engineer
+          <h4 className="text-lg text-gray-700 md:text-xl">
+            A Full Stack Developer & DevOps Engineer
           </h4>
-
-          {/* <h4 className="text-lg text-gray-700">
-            I&apos;m an undergraduate student studying CSE at SRM University AP
-            🎓 and a Full Stack Developer at Predli AB 🧑🏻‍💻. With over 1 year of
-            experience in the software industry, I have extensive expertise in
-            developing full-stack, blockchain, and generative AI applications.
-          </h4> */}
           <SocialLinks />
         </div>
       </div>
