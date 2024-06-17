@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Sakkurthi Sashank - Full Stack Developer Portfolio",
@@ -48,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={spaceGrotesk.variable}>{children}</body>
+      <GoogleAnalytics gaId="G-BK2D6GWSM8" />
     </html>
   );
 }
